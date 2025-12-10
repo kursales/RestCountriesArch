@@ -1,14 +1,10 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.hilt)
-    id("com.google.devtools.ksp")
-    alias(libs.plugins.kotlin.serialization)
-    kotlin("kapt")
 }
 
 android {
-    namespace = "com.kursales.data"
+    namespace = "com.kursales.core"
     compileSdk {
         version = release(36)
     }
@@ -45,15 +41,13 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-
-    implementation(libs.hilt.android)
-    kapt(libs.hilt.compiler)
-    implementation(libs.room.ktx)
-    ksp(libs.room.compiler)
-    implementation(libs.room.runtime)
-    implementation(libs.retrofit)
-    implementation("com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:1.0.0")
     implementation(libs.kotlinx.serialization.json)
-    implementation(project(":domain"))
-    implementation(project(":core"))
+
+    implementation(libs.androidx.navigation3.ui)
+    implementation(libs.androidx.navigation3.runtime)
+    implementation(libs.androidx.lifecycle.viewmodel.navigation3)
+    implementation(libs.androidx.material3.adaptive.navigation3)
+    implementation("androidx.navigation:navigation-compose:1.3.0-alpha05")
+    implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
+    implementation("io.github.arttttt.nav3router:nav3router:1.0.0")
 }

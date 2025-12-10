@@ -21,7 +21,8 @@ dependencyResolutionManagement {
 
 rootProject.name = "RestCountriesTest"
 include(":app")
+
 include(":data")
 include(":domain")
-include(":features:country-list")
-include(":features:country-details")
+include(":core")
+include(":features")
