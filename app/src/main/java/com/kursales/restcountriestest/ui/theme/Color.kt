@@ -1,11 +1,74 @@
 package com.kursales.restcountriestest.ui.theme
 
+import androidx.compose.material3.darkColorScheme
+import androidx.compose.material3.lightColorScheme
 import androidx.compose.ui.graphics.Color
 
-val Purple80 = Color(0xFFD0BCFF)
-val PurpleGrey80 = Color(0xFFCCC2DC)
-val Pink80 = Color(0xFFEFB8C8)
+val LightColorScheme = lightColorScheme(
+    primary = Color(0xFF3897F1),
+    onPrimary = Color.White,
+    primaryContainer = Color(0xFFEBF5FE),
+    onPrimaryContainer = Color(0xFF00215D),
+    secondary = Color(0xFF444E58),
+    onSecondary = Color.White,
+    secondaryContainer = Color(0xFFF2F5F7),
+    onSecondaryContainer = Color(0xFF191F2B),
+    tertiary = Color(0xFF8F9396),
+    onTertiary = Color.White,
+    tertiaryContainer = Color(0xFFFFD8E4),
+    onTertiaryContainer = Color(0xFF31111D),
+    error = Color(0xFFB3261E),
+    onError = Color.White,
+    errorContainer = Color(0xFFF9DEDC),
+    onErrorContainer = Color(0xFF410E0B),
+    background = Color.White,
+    surface = Color.White,
+    surfaceDim = Color(0xFFE0E5E9),
+    surfaceBright = Color(0xFFF5F6F7),
+    surfaceContainer = Color(0xFFF2F5F7),
+    onSurface = Color(0xFF767A7D),
+    onSurfaceVariant = Color(0xFFA9ADB1),
+    outline = Color(0xFF767A7D),
+    outlineVariant = Color(0xFFE0E5E9),
+    surfaceContainerLowest = Color(0xFFF5F6F7),
+    surfaceContainerLow = Color(0xFFF2F5F7),
+    surfaceContainerHigh = Color(0xFFE0E5E9),
+    surfaceContainerHighest = Color(0xFFE0E5E9),
+    inverseSurface = Color(0xFF2F3337),
+    inverseOnSurface = Color(0xFFF2F5F7),
+    inversePrimary = Color(0xFFBCE6FF),
+    scrim = Color.Black,
+)
 
-val Purple40 = Color(0xFF6650a4)
-val PurpleGrey40 = Color(0xFF625b71)
-val Pink40 = Color(0xFF7D5260)
+val DarkColorScheme = darkColorScheme(
+    primary = Color(0xFFBCE6FF),
+    onPrimary = Color(0xFF13488E),
+    primaryContainer = Color(0xFF2570C0),
+    onPrimaryContainer = Color(0xFFD3EEFF),
+    secondary = Color(0xFFC2D2DC),
+    onSecondary = Color(0xFF2D3641),
+    secondaryContainer = Color(0xFF444E58),
+    onSecondaryContainer = Color(0xFFDEEEF8),
+    tertiary = Color(0xFFC5C9CD),
+    onTertiary = Color(0xFF2F3337),
+    error = Color(0xFFF2B8B5),
+    onError = Color(0xFF601410),
+    errorContainer = Color(0xFF8C1D18),
+    onErrorContainer = Color(0xFFF9DEDC),
+    background = Color.Black,
+    surface = Color.Black,
+    surfaceDim = Color.Black,
+    surfaceBright = Color(0xFF2F3337),
+    surfaceContainer = Color(0xFF2F3337),
+    onSurface = Color(0xFFE0E5E9),
+    onSurfaceVariant = Color(0xFFC5C9CD),
+    outline = Color(0xFF8F9396),
+    outlineVariant = Color(0xFF454A4F),
+    surfaceContainerLowest = Color(0xFF1B1E20),
+    surfaceContainerLow = Color(0xFF1B1E20),
+    surfaceContainerHigh = Color(0xFF454A4F),
+    surfaceContainerHighest = Color(0xFF454A4F),
+    inverseSurface = Color(0xFFE0E5E9),
+    inverseOnSurface = Color(0xFF2F3337),
+    inversePrimary = Color(0xFF3897F1),
+)

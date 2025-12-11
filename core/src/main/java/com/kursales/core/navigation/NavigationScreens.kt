@@ -9,6 +9,6 @@ sealed class NavigationScreens: NavKey {
     @Serializable
     data object List: NavigationScreens()
     @Serializable
-    data object Details: NavigationScreens()
+    data class Details(val id: Int): NavigationScreens()
 
 }

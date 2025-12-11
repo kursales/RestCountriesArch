@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_connection">Проверьте соединение с интернетом</string>
+    <string name="error_empty_response">Пустой ответ сервера</string>
+    <string name="error_logic">Логическая ошибка</string>
+    <string name="error_bad_request_details">Некорректный запрос</string>
+    <string name="error_html_instead_of_json">Внимание! В данный момент проводятся технические работы. Пожалуйста, попробуйте позже.</string>
+    <string name="error_serialization">Ошибка десериализации:\n%s</string>
+    <string name="error_file_compression">Ошибка компрессии файла</string>
+    <string name="error_ssl">Ошибка SSL сертификата:\n%s</string>
+    <string name="error_unknown">Неизвестная ошибка.\nДополнительная информация:\n%s</string>
+    <string name="error_cancellation">Ошибка. Отмена выполнения длительной операции</string>
+    <string name="no_connection">No Connection</string>
+    <string name="please_make_sure_yor_connection_is_fine">Please, make sure, yor connection is fine</string>
+    <string name="ok">Ok</string>
+</resources>

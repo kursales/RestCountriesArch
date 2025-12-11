@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="continent">Continent</string>
+    <string name="details">Details</string>
+    <string name="currencies">Currencies</string>
+</resources>

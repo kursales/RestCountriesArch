@@ -13,4 +13,5 @@ abstract class RepositoriesModule {
 
     @Binds
     abstract fun bindsRestCountriesRepository(impl: RestCountriesRepositoryImpl): RestCountriesRepository
+
 }

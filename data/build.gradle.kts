@@ -2,9 +2,8 @@ plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.hilt)
-    id("com.google.devtools.ksp")
+    alias(libs.plugins.ksp)
     alias(libs.plugins.kotlin.serialization)
-    kotlin("kapt")
 }
 
 android {
@@ -47,13 +46,14 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation(libs.hilt.android)
-    kapt(libs.hilt.compiler)
+    ksp(libs.hilt.compiler)
     implementation(libs.room.ktx)
     ksp(libs.room.compiler)
     implementation(libs.room.runtime)
     implementation(libs.retrofit)
-    implementation("com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:1.0.0")
     implementation(libs.kotlinx.serialization.json)
+    implementation("com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:1.0.0")
+
     implementation(project(":domain"))
     implementation(project(":core"))
 }

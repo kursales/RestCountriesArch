@@ -3,8 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.hilt)
-    id("com.google.devtools.ksp")
-    kotlin("kapt")
+    alias(libs.plugins.ksp)
 }
 
 android {
@@ -47,7 +46,7 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation(libs.hilt.android)
-    kapt(libs.hilt.compiler)
+    ksp(libs.hilt.compiler)
 
     implementation(libs.room.ktx)
     ksp(libs.room.compiler)

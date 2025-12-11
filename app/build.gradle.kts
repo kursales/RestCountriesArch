@@ -3,7 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.hilt)
-    kotlin("kapt")
+    alias(libs.plugins.ksp)
 }
 
 android {
@@ -52,9 +52,6 @@ dependencies {
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
@@ -66,15 +63,14 @@ dependencies {
     implementation(libs.androidx.material3.adaptive.navigation3)
     implementation("androidx.navigation:navigation-compose:1.3.0-alpha05")
     implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
-    implementation("io.github.arttttt.nav3router:nav3router:1.0.0")
 
     implementation(libs.hilt.android)
-    kapt(libs.hilt.compiler)
+    ksp(libs.hilt.compiler)
     implementation(libs.hilt.navigation.fragment)
 
     implementation(project(":core"))
     implementation(project(":data"))
     implementation(project(":domain"))
-//    implementation(project(":features:country-details"))
-//    implementation(project(":features:country-list"))
+    implementation(project(":features:country-details"))
+    implementation(project(":features:country-list"))
 }
