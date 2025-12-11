@@ -14,8 +14,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import coil3.compose.AsyncImage
-import com.kursales.core.R
-import com.kursales.core.navigation.NavigationScreens
 import com.kursales.domain.entities.Country
 import com.kursales.core.R as CoreR
 
